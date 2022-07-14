@@ -1,0 +1,9 @@
+#bigheader {
+    font-size: 3em;
+}
+#darker {
+    background-color: gray;
+}
+.moveright {
+    transform: translateX(200px);
+}
