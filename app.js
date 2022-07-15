@@ -19,3 +19,22 @@ while (counter < middle.length) {
     middle[counter][`innerText`] = `grabbed by my class, differently`;
     counter++;
 }
+
+//used queryselector this part of knowledge check
+
+let header2 = document.querySelector(`#header3`);
+header2[`innerHTML`] = `Found you Header <a href= "https://www.yahoo.ca">to yahoo</a>`;
+
+let to_outer = document.querySelector(`#header3`);
+
+/*
+to_outer[`outerHTML`] =  `<h5>Hi There too</h5>` + to_outer[`outerHTML`];
+*/
+to_outer[`outerHTML`] +=  to_outer[`outerHTML`] + `<h4>Hi There</h4>`;
+
+let to_shared = document.querySelectorAll(`.mixed`);
+let counter2 = 0;
+while (counter2 < to_shared.length) {
+    to_shared[counter2][`outerHTML`] = `<h1>Hacked</h1>`;
+    counter2++;
+}
