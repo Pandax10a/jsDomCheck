@@ -16,6 +16,6 @@ footer[`innerText`] = `Something footer id`;
 let middle = document.getElementsByClassName(`theone`);
 let counter = 0;
 while (counter < middle.length) {
-    middle[`innerText`] = `grabbed by my class, differently`;
+    middle[counter][`innerText`] = `grabbed by my class, differently`;
     counter++;
 }
