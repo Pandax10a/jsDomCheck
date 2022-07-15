@@ -35,6 +35,16 @@ to_outer[`outerHTML`] =`<h4>Trying another</h4>`+  to_outer[`outerHTML`] + `<h4>
 let to_shared = document.querySelectorAll(`.mixed`);
 let counter2 = 0;
 while (counter2 < to_shared.length) {
-    to_shared[counter2][`outerHTML`] = `<h1>Hacked</h1>`;
+    to_shared[counter2][`outerHTML`] += `<inline>Hacked</inline>`;
     counter2++;
 }
+
+let test_3 = document.getElementById(`k3`);
+test_3[`style`][`color`] = `white`;
+test_3[`style`][`backgroundColor`] = `black`;
+test_3[`style`][`transformStyle`] = `translateX(300px)`
+
+
+let edit_pic = document.getElementById(`pic1`);
+edit_pic.setAttribute(`src`, `https://images.unsplash.com/photo-1656464868371-602be27fd4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80`)
+
