@@ -30,7 +30,7 @@ let to_outer = document.querySelector(`#header3`);
 /*
 to_outer[`outerHTML`] =  `<h5>Hi There too</h5>` + to_outer[`outerHTML`];
 */
-to_outer[`outerHTML`] +=  to_outer[`outerHTML`] + `<h4>Hi There</h4>`;
+to_outer[`outerHTML`] =`<h4>Trying another</h4>`+  to_outer[`outerHTML`] + `<h4>Hi There</h4>`;
 
 let to_shared = document.querySelectorAll(`.mixed`);
 let counter2 = 0;
